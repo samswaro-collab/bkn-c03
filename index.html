@@ -349,8 +349,10 @@ tr:last-child td{border:none;}
       <span>Bell Flight &bull; Textron Aviation &bull; Textron Systems</span>
     </div>
     <div class="header-center">
-      <div class="timestamp-badge">
-        Last updated<strong id="last-updated">--</strong>
+      <div class="timestamp-badge" style="text-align:center;">
+        <div style="font-size:10px;opacity:0.75;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:2px;">Last Refreshed</div>
+        <strong id="last-updated" style="font-size:13px;">April 18, 2026</strong>
+        <div style="font-size:9px;opacity:0.6;margin-top:2px;letter-spacing:0.3px;">Auto-refreshes 1st &amp; 15th</div>
       </div>
     </div>
     <div class="header-logos">
@@ -2217,13 +2219,9 @@ function filterHiring(skill){
 }
 
 (function(){
-  var d=new Date();
-  var months=['January','February','March','April','May','June','July','August','September','October','November','December'];
-  var str=months[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear();
-  var el=document.getElementById('last-updated');
-  if(el) el.textContent=str;
+  // Timestamp injected at deploy time by deploy_textron.ps1
   var fd=document.getElementById('footer-date');
-  if(fd) fd.textContent=str;
+  if(fd) fd.textContent=document.getElementById('last-updated').textContent;
 })();
 
 // Charts - initialize after Chart.js loads
