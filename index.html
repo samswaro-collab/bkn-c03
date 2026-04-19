@@ -8,18 +8,7 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#1a1a2e;display:flex;min-height:100vh;}
 
-/* Password Gate */
-#pw-gate{position:fixed;inset:0;z-index:9999;background:linear-gradient(135deg,#0a2240 0%,#0d3050 50%,#00a6a0 100%);display:flex;align-items:center;justify-content:center;}
-#pw-card{background:#fff;border-radius:16px;padding:40px 48px;width:380px;box-shadow:0 24px 64px rgba(0,0,0,0.4);text-align:center;}
-.pw-logos{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:24px;}
-.pw-divider{width:1px;height:36px;background:#ddd;}
-#pw-card h2{font-size:18px;color:#1a1a2e;margin-bottom:6px;font-weight:700;}
-#pw-card p{font-size:13px;color:#666;margin-bottom:24px;}
-#pw-input{width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-size:14px;outline:none;transition:border .2s;}
-#pw-input:focus{border-color:#00a6a0;}
-#pw-btn{margin-top:14px;width:100%;padding:12px;background:linear-gradient(135deg,#00a6a0,#007a75);color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;transition:opacity .2s;}
-#pw-btn:hover{opacity:.9;}
-#pw-error{color:#c8192a;font-size:12px;margin-top:8px;display:none;}
+
 
 /* Sidebar */
 #sidebar{position:fixed;top:0;left:0;width:240px;height:100vh;overflow-y:auto;background:linear-gradient(180deg,#0a2240 0%,#0d3050 60%,#007a75 100%);color:#fff;z-index:100;display:flex;flex-direction:column;}
@@ -237,30 +226,7 @@ tr:last-child td{border:none;}
 <body>
 
 <!-- PASSWORD GATE -->
-<div id="pw-gate">
-  <div id="pw-card">
-    <div class="pw-logos">
-      <svg width="70" height="28" viewBox="0 0 140 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="28" r="18" fill="#00a6a0"/>
-        <circle cx="20" cy="28" r="11" fill="#fff"/>
-        <circle cx="20" cy="28" r="6" fill="#00a6a0"/>
-        <text x="44" y="36" font-family="Arial" font-size="24" font-weight="800" fill="#1a1a2e">cyient</text>
-      </svg>
-      <div class="pw-divider"></div>
-      <svg width="90" height="28" viewBox="0 0 180 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="0" y="8" width="32" height="40" rx="3" fill="#0a2240"/>
-        <text x="3" y="40" font-family="Arial" font-size="24" font-weight="900" fill="#fff">T</text>
-        <text x="38" y="26" font-family="Arial" font-size="13" font-weight="700" fill="#0a2240">TEXTRON</text>
-        <text x="38" y="42" font-family="Arial" font-size="11" font-weight="400" fill="#666">Bell | Aviation | Systems</text>
-      </svg>
-    </div>
-    <h2>Cyient Sales Intelligence</h2>
-    <p>Enter your access password to continue</p>
-    <input type="password" id="pw-input" placeholder="Password" onkeydown="if(event.key==='Enter')checkPw()"/>
-    <button id="pw-btn" onclick="checkPw()">Access Dashboard</button>
-    <div id="pw-error">Incorrect password. Please try again.</div>
-  </div>
-</div>
+
 
 <!-- SIDEBAR -->
 <div id="sidebar">
@@ -2131,19 +2097,7 @@ tr:last-child td{border:none;}
 </div>
 
 <script>
-function checkPw(){
-  var v=document.getElementById('pw-input').value;
-  if(v==='Cyient@RTX'){
-    document.getElementById('pw-gate').style.display='none';
-    sessionStorage.setItem('textron-dash-auth','1');
-  } else {
-    document.getElementById('pw-error').style.display='block';
-    document.getElementById('pw-input').value='';
-  }
-}
-if(sessionStorage.getItem('textron-dash-auth')==='1'){
-  document.getElementById('pw-gate').style.display='none';
-}
+
 
 function switchSection(id,el){
   document.querySelectorAll('.section').forEach(function(s){s.classList.remove('active');});
