@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "lastRefreshed": "2026-04-19T06:49:28Z",
+    "nextRefresh": "2026-04-24T06:49:28Z",
+    "refreshIntervalDays": 5,
+    "sources": [
+      "careers.bellflight.com",
+      "careers.txtav.com",
+      "textron.com/careers",
+      "linkedin.com/jobs",
+      "indeed.com"
+    ]
+  },
+  "textron": {
+    "bell": {
+      "total": 210,
+      "locations": [
+        {
+          "city": "Fort Worth, TX",
+          "count": 50
+        },
+        {
+          "city": "Mirabel, QC",
+          "count": 15
+        },
+        {
+          "city": "Amarillo, TX",
+          "count": 10
+        },
+        {
+          "city": "Remote / Other",
+          "count": 5
+        }
+      ],
+      "source": "fallback"
+    },
+    "textronAv": {
+      "total": 280,
+      "locations": [
+        {
+          "city": "Wichita, KS",
+          "count": 80
+        },
+        {
+          "city": "Remote / Other",
+          "count": 10
+        },
+        {
+          "city": "Augusta, KS",
+          "count": 5
+        },
+        {
+          "city": "Abilene, TX",
+          "count": 5
+        }
+      ],
+      "source": "fallback"
+    },
+    "textronSystems": {
+      "total": 35,
+      "locations": [
+        {
+          "city": "Hunt Valley, MD",
+          "count": 10
+        },
+        {
+          "city": "Wilmington, MA",
+          "count": 8
+        },
+        {
+          "city": "New Orleans, LA",
+          "count": 5
+        },
+        {
+          "city": "Dayton, OH",
+          "count": 4
+        }
+      ],
+      "source": "fallback"
+    },
+    "india": {
+      "total": 25,
+      "locations": [
+        {
+          "city": "Bangalore, KA",
+          "count": 15
+        },
+        {
+          "city": "Hyderabad, TS",
+          "count": 8
+        },
+        {
+          "city": "Remote / Other",
+          "count": 2
+        }
+      ],
+      "source": "fallback"
+    },
+    "totalRoles": 550
+  },
+  "cyient": {
+    "textronUSFTEs": 4,
+    "textronIndiaFTEs": 12,
+    "growthTarget18mo": 50,
+    "indiaHubs": [
+      "Bangalore",
+      "Hyderabad"
+    ],
+    "indiaFunctions": [
+      "Tech Pubs",
+      "CAD/Design",
+      "Stress FEA",
+      "PLM/Digital",
+      "Sustaining Engineering",
+      "SW Test"
+    ],
+    "note": "Internal Cyient data \u2014 update CYIENT_INTERNAL in data_refresh.py"
+  }
+}
