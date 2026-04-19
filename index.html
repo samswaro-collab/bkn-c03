@@ -247,12 +247,6 @@ tr:last-child td{border:none;}
   <div class="nav-section-label">Overview</div>
   <div class="nav-item active" onclick="switchSection('overview',this)"><span class="icon">&#127968;</span> Textron Group</div>
 
-  <div class="nav-section-label">Intelligence</div>
-  <div class="nav-item" onclick="switchSection('signalchain',this)"><span class="icon">&#128268;</span> Signal Chain <span class="nav-badge badge-teal" style="background:#7c3aed;color:#fff;">3</span></div>
-  <div class="nav-item" onclick="switchSection('hiring',this)"><span class="icon">&#128084;</span> Hiring Intel</div>
-  <div class="nav-item" onclick="switchSection('cyient',this)"><span class="icon">&#128200;</span> Fast-Sell Skills <span class="nav-badge badge-teal">Fit Map</span></div>
-  <div class="nav-item" onclick="switchSection('contacts',this)"><span class="icon">&#128100;</span> Key Contacts</div>
-
   <div class="nav-section-label">Business Units</div>
   <div class="nav-section-sublabel" style="font-size:9px;color:#94a3b8;padding:4px 16px 2px;text-transform:uppercase;letter-spacing:.5px;font-weight:700;">Bell Flight</div>
   <div class="nav-item" onclick="switchSection('bell',this)"><span class="icon">&#128641;</span> Bell Overview</div>
@@ -266,6 +260,12 @@ tr:last-child td{border:none;}
   <div class="nav-item" onclick="switchSection('aftermarket',this)"><span class="icon">&#128295;</span> Aftermarket / MRO</div>
   <div class="nav-section-sublabel" style="font-size:9px;color:#94a3b8;padding:4px 16px 2px;text-transform:uppercase;letter-spacing:.5px;font-weight:700;">Textron Systems</div>
   <div class="nav-item" onclick="switchSection('tsystems',this)"><span class="icon">&#128737;</span> Textron Systems</div>
+
+  <div class="nav-section-label">Intelligence</div>
+  <div class="nav-item" onclick="switchSection('signalchain',this)"><span class="icon">&#128268;</span> Signal Chain <span class="nav-badge badge-teal" style="background:#7c3aed;color:#fff;">3</span></div>
+  <div class="nav-item" onclick="switchSection('hiring',this)"><span class="icon">&#128084;</span> Hiring Intelligence</div>
+  <div class="nav-item" onclick="switchSection('cyient',this)"><span class="icon">&#128200;</span> Fast-Sell Skills <span class="nav-badge badge-teal">Fit Map</span></div>
+  <div class="nav-item" onclick="switchSection('contacts',this)"><span class="icon">&#128100;</span> Key Contacts</div>
 
   <div class="nav-section-label">Specialist Functions</div>
   <div class="nav-item" onclick="switchSection('sf-digital',this)"><span class="icon">&#128187;</span> Digital Technologies</div>
@@ -283,95 +283,21 @@ tr:last-child td{border:none;}
   <div class="nav-item" onclick="switchSection('sf-mro',this)"><span class="icon">&#128736;</span> Sustainment &amp; MRO Eng <span class="nav-badge badge-high">NEW</span></div>
   <div class="nav-item" onclick="switchSection('sf-cert',this)"><span class="icon">&#128203;</span> Certification Eng (FAA/DER) <span class="nav-badge badge-high">NEW</span></div>
 
-  <div class="nav-section-label">Partnerships</div>
+  <div class="nav-section-label">Outreach Playbook</div>
+  <div class="nav-item" onclick="switchSection('outreach',this)"><span class="icon">&#129309;</span> Outreach Playbook <span class="nav-badge badge-med">Cold→Warm</span></div>
+
+  <div class="nav-section-label">Partnership &amp; Alliances</div>
   <div class="nav-item" onclick="switchSection('partners',this)"><span class="icon">&#129309;</span> Partnerships &amp; Alliances</div>
 
-  <div class="nav-section-label">Outreach</div>
-  <div class="nav-item" onclick="switchSection('outreach',this)"><span class="icon">&#129309;</span> Outreach Playbook <span class="nav-badge badge-med">Cold→Warm</span></div>
+  <div class="nav-section-label">Industry Events</div>
+  <div class="nav-item" onclick="switchSection('events',this)"><span class="icon">&#128197;</span> Industry Events</div>
 
   <div class="nav-section-label">Competitive Intel</div>
   <div class="nav-item" onclick="switchSection('compintel',this)"><span class="icon">&#128202;</span> Competitive Intel</div>
 
-  <div class="nav-section-label">Events</div>
-  <div class="nav-item" onclick="switchSection('events',this)"><span class="icon">&#128197;</span> Industry Events</div>
-
-  <!-- OPEN ROLES BY SKILL -->
-  <div class="sr-block">
-    <div class="sr-block-label">Open Roles by Skill</div>
-
-    <div class="sr-item" onclick="filterHiring('sw178')">
-      <div class="sr-text">
-        <div class="sr-name">Embedded SW (DO-178C)</div>
-        <div class="sr-locs">Wichita 20+ &middot; Ft Worth 5+</div>
-      </div>
-      <div class="sr-count">~25+</div>
-      <div class="sr-bar-track"><div class="sr-bar-fill" style="width:50%"></div></div>
-    </div>
-
-    <div class="sr-item" onclick="filterHiring('structures')">
-      <div class="sr-text">
-        <div class="sr-name">Mechanical Design &amp; Stress</div>
-        <div class="sr-locs">Ft Worth 20+ &middot; Wichita 15+</div>
-      </div>
-      <div class="sr-count">~35+</div>
-      <div class="sr-bar-track"><div class="sr-bar-fill" style="width:70%"></div></div>
-    </div>
-
-    <div class="sr-item" onclick="filterHiring('projeng')">
-      <div class="sr-text">
-        <div class="sr-name">Project Engineering</div>
-        <div class="sr-locs">Wichita 25+ &middot; Ft Worth 15+</div>
-      </div>
-      <div class="sr-count">~40+</div>
-      <div class="sr-bar-track"><div class="sr-bar-fill" style="width:80%"></div></div>
-    </div>
-
-    <div class="sr-item" onclick="filterHiring('pubs')">
-      <div class="sr-text">
-        <div class="sr-name">Technical Publications</div>
-        <div class="sr-locs">Wichita 12+ &middot; Ft Worth 8+</div>
-      </div>
-      <div class="sr-count">~20+</div>
-      <div class="sr-bar-track"><div class="sr-bar-fill" style="width:40%"></div></div>
-    </div>
-
-    <div class="sr-item" onclick="filterHiring('digital')">
-      <div class="sr-text">
-        <div class="sr-name">Digital Technologies</div>
-        <div class="sr-locs">Ft Worth 15+ &middot; Wichita 10+</div>
-      </div>
-      <div class="sr-count">~25+</div>
-      <div class="sr-bar-track"><div class="sr-bar-fill" style="width:50%"></div></div>
-    </div>
-
-    <div class="sr-item" onclick="filterHiring('mfg')">
-      <div class="sr-text">
-        <div class="sr-name">Process &amp; Mfg Engineering</div>
-        <div class="sr-locs">Ft Worth 10+ &middot; Wichita 8+</div>
-      </div>
-      <div class="sr-count">~18+</div>
-      <div class="sr-bar-track"><div class="sr-bar-fill" style="width:36%"></div></div>
-    </div>
-
-    <div class="sr-item" onclick="filterHiring('cad')">
-      <div class="sr-text">
-        <div class="sr-name">CAD Design Engineering</div>
-        <div class="sr-locs">Ft Worth 10+ &middot; Wichita 5+</div>
-      </div>
-      <div class="sr-count">~15+</div>
-      <div class="sr-bar-track"><div class="sr-bar-fill" style="width:30%"></div></div>
-    </div>
-
-    <div class="sr-item" onclick="filterHiring('hw254')">
-      <div class="sr-text">
-        <div class="sr-name">Hardware Eng (DO-254)</div>
-        <div class="sr-locs">Ft Worth 5+ &middot; Wichita 3+</div>
-      </div>
-      <div class="sr-count">~8+</div>
-      <div class="sr-bar-track"><div class="sr-bar-fill" style="width:16%"></div></div>
-    </div>
-
-    <div class="sr-clear" onclick="filterHiring(null)">&#10005; clear filter &amp; show all</div>
+  <div class="sidebar-footer" style="padding:12px 16px;font-size:11px;color:rgba(255,255,255,0.4);border-top:1px solid rgba(255,255,255,0.07);margin-top:auto;">
+    $13.7B Revenue &middot; $40B+ Backlog<br>
+    <span style="font-size:10px;">Data refreshed: April 2025</span>
   </div>
 </div>
 
