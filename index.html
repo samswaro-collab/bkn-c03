@@ -89,6 +89,14 @@ p.section-sub{font-size:13px;color:#666;margin-bottom:22px;}
 
 /* Panels */
 .panel{background:#fff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(0,0,0,0.07);margin-bottom:22px;}
+.top5-head{font-size:11px;font-weight:800;color:#64748b;text-transform:uppercase;letter-spacing:1px;margin:22px 0 12px;}
+.top5-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:22px;}
+@media(max-width:900px){.top5-grid{grid-template-columns:repeat(2,1fr);}}
+.t5w{background:#fff;border-radius:10px;padding:14px 14px 12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);border-top:4px solid var(--c,#f59e0b);position:relative;}
+.t5w .t5rank{font-size:10px;font-weight:800;color:var(--c,#f59e0b);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;}
+.t5w .t5name{font-size:12px;font-weight:700;color:#0f172a;line-height:1.35;margin-bottom:5px;}
+.t5w .t5sub{font-size:11px;color:#64748b;line-height:1.4;margin-bottom:6px;}
+.t5w .t5sites{font-size:10px;color:#94a3b8;font-style:italic;}
 .panel h3{font-size:14px;font-weight:700;color:#1a1a2e;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #f0f2f5;}
 .panel p{font-size:13px;color:#555;line-height:1.7;margin-bottom:10px;}
 .panel ul{padding-left:18px;}
@@ -337,7 +345,7 @@ tr:last-child td{border:none;}
     <div class="header-center">
       <div class="timestamp-badge" style="text-align:center;">
         <div style="font-size:10px;opacity:0.75;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:2px;">Last Refreshed</div>
-        <strong id="last-updated" style="font-size:13px;">April 19, 2026</strong>
+        <strong id="last-updated" style="font-size:13px;">BEAKON_REFRESH_DATE</strong>
         <div style="font-size:9px;opacity:0.6;margin-top:2px;letter-spacing:0.3px;">Auto-refreshes every 5 days</div>
       </div>
     </div>
@@ -507,6 +515,14 @@ tr:last-child td{border:none;}
           <li><strong>FOCI reminder:</strong> All US military Bell programs (V-280, V-22, H-1) must flow through Cyient DLM (FOCI-mitigated US entity). Commercial Bell work (407, 412, 525) can leverage global Cyient delivery.</li>
         </ul>
       </div>
+      <div class="top5-head">Top 5 In-Demand Skills / Functions</div>
+      <div class="top5-grid">
+        <div class="t5w" style="--c:#f59e0b;"><div class="t5rank">#1 Most Hired</div><div class="t5name">Rotorcraft Structures Engineering</div><div class="t5sub">Composites, stress, FEA · FLRAA/V-280 NPI</div><div class="t5sites">Fort Worth TX</div></div>
+        <div class="t5w" style="--c:#d97706;"><div class="t5rank">#2</div><div class="t5name">Software Engineering (DO-178C)</div><div class="t5sub">Avionics SW, FADEC, flight control systems</div><div class="t5sites">Fort Worth TX</div></div>
+        <div class="t5w" style="--c:#b45309;"><div class="t5rank">#3</div><div class="t5name">Systems Engineering</div><div class="t5sub">FLRAA systems integration, MBSE, SysML</div><div class="t5sites">Fort Worth TX</div></div>
+        <div class="t5w" style="--c:#f59e0b;"><div class="t5rank">#4</div><div class="t5name">Technical Publications</div><div class="t5sub">AMM, IPC, SRM for 407/412/525 fleet</div><div class="t5sites">Fort Worth TX</div></div>
+        <div class="t5w" style="--c:#d97706;"><div class="t5rank">#5</div><div class="t5name">Manufacturing Engineering</div><div class="t5sub">Composites mfg, tooling, assembly processes</div><div class="t5sites">Fort Worth TX · Mirabel QC</div></div>
+      </div>
     </div>
 
     <!-- BELL COMMERCIAL -->
@@ -556,6 +572,14 @@ tr:last-child td{border:none;}
           <li><strong>Bell 407/412 aging fleet:</strong> 1,200+ 407 and 1,100+ 412 in service — SB/AD compliance engineering, aging aircraft studies, obsolescence management.</li>
           <li><strong>India opportunity:</strong> Bell 407 is used by Indian paramilitary forces and civil operators — Cyient's India presence makes it a natural partner for India-specific support, training documentation, and logistics engineering.</li>
         </ul>
+      </div>
+      <div class="top5-head">Top 5 In-Demand Skills / Functions</div>
+      <div class="top5-grid">
+        <div class="t5w" style="--c:#f59e0b;"><div class="t5rank">#1 Most Hired</div><div class="t5name">Technical Publications</div><div class="t5sub">AMM, IPC, SRM · 407/412/525 fleet updates</div><div class="t5sites">Fort Worth TX</div></div>
+        <div class="t5w" style="--c:#d97706;"><div class="t5rank">#2</div><div class="t5name">Structures & Stress Engineering</div><div class="t5sub">FAR Part 27/29 cert · damage tolerance · composites</div><div class="t5sites">Fort Worth TX · Mirabel QC</div></div>
+        <div class="t5w" style="--c:#b45309;"><div class="t5rank">#3</div><div class="t5name">Systems Engineering</div><div class="t5sub">Avionics integration, flight control, hydraulics</div><div class="t5sites">Fort Worth TX</div></div>
+        <div class="t5w" style="--c:#f59e0b;"><div class="t5rank">#4</div><div class="t5name">Software Engineering (DO-178C)</div><div class="t5sub">FMS, Garmin G1000H · avionics SW certification</div><div class="t5sites">Fort Worth TX</div></div>
+        <div class="t5w" style="--c:#d97706;"><div class="t5rank">#5</div><div class="t5name">Certification Engineering</div><div class="t5sub">FAA DER, EASA · Part 27/29 compliance support</div><div class="t5sites">Fort Worth TX</div></div>
       </div>
     </div>
 
@@ -609,6 +633,14 @@ tr:last-child td{border:none;}
           <li><strong>FOCI requirement:</strong> All US military rotorcraft work must flow through Cyient DLM (FOCI-mitigated US entity). Do not route through India delivery for classified or EAR-controlled programs.</li>
         </ul>
       </div>
+      <div class="top5-head">Top 5 In-Demand Skills / Functions</div>
+      <div class="top5-grid">
+        <div class="t5w" style="--c:#f59e0b;"><div class="t5rank">#1 Most Hired</div><div class="t5name">Composites & Structures Engineering</div><div class="t5sub">V-280 airframe, rotor system NPI · FEA/stress</div><div class="t5sites">Fort Worth TX</div></div>
+        <div class="t5w" style="--c:#d97706;"><div class="t5rank">#2</div><div class="t5name">Systems Engineering (MBSE)</div><div class="t5sub">FLRAA architecture, SysML · mission systems</div><div class="t5sites">Fort Worth TX</div></div>
+        <div class="t5w" style="--c:#b45309;"><div class="t5rank">#3</div><div class="t5name">Software Engineering (DO-178C DAL A)</div><div class="t5sub">V-280 flight control SW · safety-critical cert</div><div class="t5sites">Fort Worth TX</div></div>
+        <div class="t5w" style="--c:#f59e0b;"><div class="t5rank">#4</div><div class="t5name">FADEC & Propulsion Engineering</div><div class="t5sub">V-280 engine integration · GE T64 FADEC SW</div><div class="t5sites">Fort Worth TX</div></div>
+        <div class="t5w" style="--c:#d97706;"><div class="t5rank">#5</div><div class="t5name">Technical Publications (ILS)</div><div class="t5sub">V-22/H-1 sustainment · SB/AD, IPC, TM updates</div><div class="t5sites">Fort Worth TX</div></div>
+      </div>
     </div>
 
     <!-- TEXTRON AVIATION OVERVIEW -->
@@ -653,6 +685,14 @@ tr:last-child td{border:none;}
           <li><strong>SAF re-certification:</strong> Fleet-wide Part 23 SAF compatibility review across 20,000+ aircraft is driving SB engineering and documentation volume. Ideal for Cyient augmentation model — steady, long-duration, repeatable work.</li>
           <li><strong>Teamcenter PLM support:</strong> TxAv uses Siemens Teamcenter enterprise-wide for BOM, configuration control, and engineering change management. Cyient's PLM practice is a direct add-on once an engineering relationship is established.</li>
         </ul>
+      </div>
+      <div class="top5-head">Top 5 In-Demand Skills / Functions</div>
+      <div class="top5-grid">
+        <div class="t5w" style="--c:#0ea5e9;"><div class="t5rank">#1 Most Hired</div><div class="t5name">Structures & Stress Engineering</div><div class="t5sub">Citation/Beechcraft airframe cert · Nastran/ANSYS</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#0284c7;"><div class="t5rank">#2</div><div class="t5name">Technical Publications</div><div class="t5sub">AMM/IPC/SRM · 20,000+ aircraft fleet</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#0369a1;"><div class="t5rank">#3</div><div class="t5name">Software Engineering (DO-178C)</div><div class="t5sub">Garmin G3000/G5000 avionics cert · DAL B/C</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#0ea5e9;"><div class="t5rank">#4</div><div class="t5name">Sustaining Engineering</div><div class="t5sub">Fleet SB/AD compliance · airworthiness</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#38bdf8;"><div class="t5rank">#5</div><div class="t5name">CAD Design (CATIA/CREO)</div><div class="t5sub">Detailed design, 3D modeling · NPI support</div><div class="t5sites">Wichita KS</div></div>
       </div>
     </div>
 
@@ -703,6 +743,14 @@ tr:last-child td{border:none;}
           <li><strong>Caravan / SkyCourier tech pubs:</strong> 3,000+ Caravans in service globally plus growing SkyCourier fleet (FedEx, UPS). Regular AMM/IPC updates required. High-volume, steady work — ideal first contract to establish the Cyient–TxAv relationship before pursuing cert engineering work.</li>
         </ul>
       </div>
+      <div class="top5-head">Top 5 In-Demand Skills / Functions</div>
+      <div class="top5-grid">
+        <div class="t5w" style="--c:#0ea5e9;"><div class="t5rank">#1 Most Hired</div><div class="t5name">Avionics Software (DO-178C)</div><div class="t5sub">G3000/G5000 integration · Citation Ascend cert</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#0284c7;"><div class="t5rank">#2</div><div class="t5name">Structures & Stress Analysis</div><div class="t5sub">Citation Ascend NPI · airframe cert · DTA</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#0369a1;"><div class="t5rank">#3</div><div class="t5name">Systems Engineering</div><div class="t5sub">Flight control, hydraulics, electrical · integration</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#0ea5e9;"><div class="t5rank">#4</div><div class="t5name">Sustaining Engineering</div><div class="t5sub">SB/AD authoring · SAF re-certification · fleet</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#38bdf8;"><div class="t5rank">#5</div><div class="t5name">Technical Publications</div><div class="t5sub">Caravan/Citation AMM · IPC · SkyCourier pubs</div><div class="t5sites">Wichita KS</div></div>
+      </div>
     </div>
 
     <!-- BEECHCRAFT -->
@@ -741,6 +789,14 @@ tr:last-child td{border:none;}
           <li><strong>ISR sensor integration:</strong> EO/IR and SIGINT integration engineering on King Air 350 ISR platform — embedded systems, interface control documents, data link integration. Via Cyient DLM for military.</li>
           <li><strong>Bonanza/Baron digitization:</strong> 10,000+ legacy piston aircraft with aging paper documentation — conversion to S1000D / ATA iSpec 2200 is a ready-to-scope project.</li>
         </ul>
+      </div>
+      <div class="top5-head">Top 5 In-Demand Skills / Functions</div>
+      <div class="top5-grid">
+        <div class="t5w" style="--c:#0ea5e9;"><div class="t5rank">#1 Most Hired</div><div class="t5name">Technical Publications</div><div class="t5sub">King Air AMM/IPC/SRM · 7,000+ in service</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#0284c7;"><div class="t5rank">#2</div><div class="t5name">Structures Engineering</div><div class="t5sub">King Air 360 production · sustaining analysis</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#0369a1;"><div class="t5rank">#3</div><div class="t5name">Sustaining Engineering</div><div class="t5sub">SB/AD authoring · King Air/Baron airworthiness</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#0ea5e9;"><div class="t5rank">#4</div><div class="t5name">CAD Design (CATIA)</div><div class="t5sub">Engineering drawings · King Air 360 NPI</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#38bdf8;"><div class="t5rank">#5</div><div class="t5name">Manufacturing Engineering</div><div class="t5sub">Assembly, tooling, supplier quality · production ramp</div><div class="t5sites">Wichita KS</div></div>
       </div>
     </div>
 
@@ -784,6 +840,14 @@ tr:last-child td{border:none;}
           <li><strong>T-7A avionics DO-178C:</strong> Advanced glass cockpit requires DO-178C V&amp;V support for avionics software updates throughout the production run and SLEP modifications. Cyient DLM's avionics cert practice applies as the platform matures.</li>
         </ul>
       </div>
+      <div class="top5-head">Top 5 In-Demand Skills / Functions</div>
+      <div class="top5-grid">
+        <div class="t5w" style="--c:#f59e0b;"><div class="t5rank">#1 Most Hired</div><div class="t5name">Sustaining Engineering (SEPM)</div><div class="t5sub">T-6 SB/AD authoring · fleet airworthiness</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#d97706;"><div class="t5rank">#2</div><div class="t5name">Technical Publications</div><div class="t5sub">T-6 Texan II AMM · IPC · IETM updates</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#b45309;"><div class="t5rank">#3</div><div class="t5name">Systems Engineering</div><div class="t5sub">T-6 avionics, EW integration · mission systems</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#f59e0b;"><div class="t5rank">#4</div><div class="t5name">Software Engineering (DO-178C)</div><div class="t5sub">Mission computer, avionics SW · T-7A cert</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#d97706;"><div class="t5rank">#5</div><div class="t5name">Manufacturing Engineering</div><div class="t5sub">T-7A LRIP ramp · tooling · production quality</div><div class="t5sites">Wichita KS</div></div>
+      </div>
     </div>
 
     <!-- AFTERMARKET -->
@@ -813,6 +877,14 @@ tr:last-child td{border:none;}
           <div class="role-bar-wrap"><div class="role-bar-label"><span>Parts Obsolescence &amp; PLM</span><span>Fit: 70%</span></div><div class="role-bar-track"><div class="role-bar-fill" style="width:70%"></div></div></div>
           <div class="role-bar-wrap"><div class="role-bar-label"><span>Digital MRO Tools / MOM-MES</span><span>Fit: 60%</span></div><div class="role-bar-track"><div class="role-bar-fill" style="width:60%"></div></div></div>
         </div>
+      </div>
+      <div class="top5-head">Top 5 In-Demand Skills / Functions</div>
+      <div class="top5-grid">
+        <div class="t5w" style="--c:#0ea5e9;"><div class="t5rank">#1 Most Hired</div><div class="t5name">MRO Engineering</div><div class="t5sub">Workscope, teardown analysis · repair disposition</div><div class="t5sites">Wichita KS · Global TAS network</div></div>
+        <div class="t5w" style="--c:#0284c7;"><div class="t5rank">#2</div><div class="t5name">Technical Publications</div><div class="t5sub">SB/AMM updates · CMM · S1000D conversion</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#0369a1;"><div class="t5rank">#3</div><div class="t5name">Sustaining Engineering</div><div class="t5sub">Airworthiness, obsolescence · regulatory compliance</div><div class="t5sites">Wichita KS</div></div>
+        <div class="t5w" style="--c:#0ea5e9;"><div class="t5rank">#4</div><div class="t5name">Field Service Engineering</div><div class="t5sub">AOG support · customer liaison · warranty</div><div class="t5sites">Global deployment</div></div>
+        <div class="t5w" style="--c:#38bdf8;"><div class="t5rank">#5</div><div class="t5name">Quality & NDT Engineering</div><div class="t5sub">NDT inspection, MRB disposition · AS9100</div><div class="t5sites">Wichita KS</div></div>
       </div>
     </div>
 
@@ -869,6 +941,40 @@ tr:last-child td{border:none;}
           <li><strong>ALM for autonomous systems:</strong> Ripsaw UGV and Aerosonde use model-based systems engineering and ALM tools. Cyient's ALM practice (DOORS, Jama) is applicable.</li>
           <li><strong>Overall priority:</strong> Textron Systems is the smallest of the three segments and has high ITAR/classification exposure. Recommend treating it as an opportunistic addition once Bell or TxAv anchor deals are established.</li>
         </ul>
+      </div>
+
+      <p class="top5-head">Top 5 In-Demand Skills / Functions — Textron Systems</p>
+      <div class="top5-grid">
+        <div class="t5w" style="--c:#8b5cf6">
+          <div class="t5rank">#1 In Demand</div>
+          <div class="t5name">Systems Engineering (MBSE)</div>
+          <div class="t5sub">Unmanned systems architecture, C2 link design, sensor integration, DOORS / Cameo</div>
+          <div class="t5sites">Hunt Valley MD</div>
+        </div>
+        <div class="t5w" style="--c:#7c3aed">
+          <div class="t5rank">#2 In Demand</div>
+          <div class="t5name">Software Engineering</div>
+          <div class="t5sub">Mission SW, embedded real-time, DO-178C DAL B/C, UAS flight management</div>
+          <div class="t5sites">Hunt Valley MD · New Orleans LA</div>
+        </div>
+        <div class="t5w" style="--c:#6d28d9">
+          <div class="t5rank">#3 In Demand</div>
+          <div class="t5name">Technical Publications / ILS</div>
+          <div class="t5sub">SHADOW / Aerosonde operator & maintenance manuals, IETMs, S1000D logistics docs</div>
+          <div class="t5sites">Hunt Valley MD</div>
+        </div>
+        <div class="t5w" style="--c:#5b21b6">
+          <div class="t5rank">#4 In Demand</div>
+          <div class="t5name">Manufacturing Engineering</div>
+          <div class="t5sub">FLIR/sensor assembly, UAV structural fabrication, quality / NDT, DFM</div>
+          <div class="t5sites">Wilmington MA</div>
+        </div>
+        <div class="t5w" style="--c:#4c1d95">
+          <div class="t5rank">#5 In Demand</div>
+          <div class="t5name">Electronic &amp; Avionics Engineering</div>
+          <div class="t5sub">Sensor fusion, EW systems design, avionics integration, FPGA / embedded HW</div>
+          <div class="t5sites">Hunt Valley MD</div>
+        </div>
       </div>
     </div>
 
